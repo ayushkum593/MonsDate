@@ -1,0 +1,20 @@
+<h2>Create Your Profile</h2>
+<form method="post">
+    {% csrf_token %}
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br><br>
+    
+    <label for="bio">Bio:</label><br>
+    <textarea id="bio" name="bio"></textarea><br><br>
+    
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age"><br><br>
+    
+    <label for="gender">Gender:</label><br>
+    <input type="text" id="gender" name="gender"><br><br>
+    
+    <label for="location">Location:</label><br>
+    <input type="text" id="location" name="location"><br><br>
+    
+    <button type="submit">Create Profile</button>
+</form>
