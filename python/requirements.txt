@@ -1,6 +1,8 @@
 django
 pymongo
-authlib ~= 1.0
-django ~= 4.0
-python-dotenv ~= 0.19
-requests ~= 2.27
+authlib
+django
+python-dotenv
+requests
+dnspython
+auth0-python
