@@ -84,7 +84,7 @@ WSGI_APPLICATION = 'dating_app.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django',
+        'ENGINE': 'djongo',
         'NAME': 'dating_app_db',
         'CLIENT': {
             'host': 'mongodb+srv://aaguilar1892:Little_alex246!@user-data.srqmt.mongodb.net/?retryWrites=true&w=majority&appName=user-data',

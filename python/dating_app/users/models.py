@@ -1,5 +1,4 @@
-from django.db import models
-from django import models
+from djongo import models
 
 class Profile(models.Model):
     user_id = models.CharField(max_length=255, unique=True)
