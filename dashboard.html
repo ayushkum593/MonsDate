@@ -1,0 +1,24 @@
+# dating_app/templates/dashboard.html
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Your Profile</h5>
+                {% if profile %}
+                    <p>Name: {{ profile.name }}</p>
+                    <p>Age: {{ profile.age }}</p>
+                    <p>Location: {{ profile.location }}</p>
+                    <p>Bio: {{ profile.bio }}</p>
+                    <a href="{% url 'create_profile' %}" class="btn btn-primary">Edit Profile</a>
+                {% else %}
+                    <p>No profile found.</p>
+                    <a href="{% url 'create_profile' %}" class="btn btn-primary">Create Profile</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
